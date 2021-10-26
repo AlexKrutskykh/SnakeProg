@@ -8,6 +8,7 @@ namespace SnakeProg
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
+            Console.WriteLine("Test message after");
         }
     }
 }
