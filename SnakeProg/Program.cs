@@ -6,7 +6,20 @@ namespace SnakeProg
     {
         static void Main(string[] args)
         {
-            var x1 = 3;
+            Point p1 = new Point();
+            p1.x = 3;
+            p1.y = 5;
+            p1.sym = '$';
+            p1.Drow();
+
+            Point p2 = new Point();
+            p2.x = 5;
+            p2.y = 8;
+            p2.sym = '%';
+            p2.Drow();
+
+           
+           /* var x1 = 3;
             var y1 = 4;
             var sym1 = '*';
 
@@ -17,17 +30,12 @@ namespace SnakeProg
             var sym2 = '#';
 
 
-            Drow( x2, y2, sym2);
+            Drow( x2, y2, sym2);*/
 
 
         }
 
-        static void Drow (int x , int y , char sym )
-        {
-            Console.SetCursorPosition(x, y);
-            Console.WriteLine(sym);
-
-        }
+        
 
 
 
