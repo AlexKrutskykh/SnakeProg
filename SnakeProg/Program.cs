@@ -6,9 +6,10 @@ namespace SnakeProg
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
-            //check this commit;
+            Console.WriteLine($"What is your name?");
+            var userName = Console.ReadLine();
+            Console.WriteLine($"Hello {userName}, how are you dude? ");
+            
         }
     }
 }
