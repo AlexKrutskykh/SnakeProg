@@ -116,5 +116,14 @@ namespace SnakeProg
         }
 
 
+        public static void tempChecker(int monthNum, double averageTemp)
+        {
+            if ((monthNum == 10 || monthNum == 11 || monthNum == 12) && averageTemp > 0)
+            {
+                Console.WriteLine($"Rainy  winter looks like)");
+            }
+        }
+
+
     }
 }
