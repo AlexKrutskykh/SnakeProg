@@ -6,9 +6,9 @@ namespace SnakeProg
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
-            Console.WriteLine("Test message after");
+            Methods.print2dArray(5,5);
+            Methods.createPhoneBook(5,2);
+            Methods.revertString("Hello, nice wether");
         }
     }
 }
