@@ -54,9 +54,14 @@ namespace SnakeProg
             Console.WriteLine($"Your phone book is:");
             for (int i = 0; i < numberOfContacts; i++)
             {
-                int y = 0;
-                Console.Write($"Name: {array2d[i, y]} ");
-                Console.WriteLine($"Phont number: {array2d[i,++y]}");
+                for (int j = 0; j < howManyLineData; j++)
+                {
+                    
+                    Console.Write( $"{array2d[i, j]} ");
+                }
+                Console.WriteLine();
+              
+                
 
             }
             }
