@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SnakeProg
 {
     class Methods
     {
-         
 
-        public static int userInputChecker ( string messageToUser, string requeredToinput)
+
+        public static int userInputChecker(string messageToUser, string requeredToinput)
         {
-             string input;
+            string input;
             do
             {
                 Console.WriteLine($"{messageToUser}");
@@ -34,14 +30,14 @@ namespace SnakeProg
         }
 
 
-        public static double averageNumber (int a, int b)
+        public static double averageNumber(int a, int b)
         {
-            double result = (a + b )/2;
+            double result = (a + b) / 2;
             return result;
         }
 
 
-        public static string getMonthByNum (int numOfmonth)
+        public static string getMonthByNum(int numOfmonth)
         {
             string answer = "";
             switch (numOfmonth)
@@ -104,11 +100,12 @@ namespace SnakeProg
 
         public static void wholeNumberChecker(int input)
         {
-            if (input% 2 == 0)
+            if (input % 2 == 0)
             {
                 Console.WriteLine($"Eneterd number '{input}' is a whole number");
 
-            } else
+            }
+            else
             {
                 Console.WriteLine($"Eneterd number '{input}' is NOT a whole number");
             }
@@ -125,5 +122,77 @@ namespace SnakeProg
         }
 
 
+        public static void RimToArabik(string input)
+        {
+            int assignedValue = 0;
+            int givenValue = 0;
+            int previouseValue = 0;
+            int lastIndexValue = 0;
+            if (input[^1] == 'V')
+            {
+                lastIndexValue = 5;
+            }
+            else if (input[^1] == 'X')
+            {
+                lastIndexValue = 10;
+            }
+            for (int i = 0; i <= input.Length - 1; i++)
+            {
+                switch (input[i])
+                {
+                    case 'I':
+                        assignedValue = 1;
+                        break;
+                    case 'V':
+                        assignedValue = 5;
+                        break;
+                    case 'X':
+                        assignedValue = 10;
+                        break;
+                    case 'L':
+                        assignedValue = 50;
+                        break;
+                    default:
+                        break;
+                }
+                if (input.Length - 1 == 0)
+                {
+                    Console.WriteLine(assignedValue);
+                }
+                else if (i == 0)
+                {
+                    givenValue = assignedValue;
+
+                }
+                else if (i == input.Length - 2 && assignedValue < lastIndexValue)
+                {
+                    givenValue = (lastIndexValue - assignedValue) + givenValue;
+                    break;
+
+                }
+                else if (givenValue > assignedValue)
+                {
+                    givenValue = assignedValue + givenValue;
+                }
+                else if (givenValue < assignedValue)
+                {
+                    givenValue = assignedValue - givenValue;
+                }
+                else if (givenValue == assignedValue)
+                {
+                    givenValue = assignedValue + givenValue;
+
+                }
+
+            }
+            Console.WriteLine(givenValue);
+        }
+
+
+
     }
+
+
+
 }
+

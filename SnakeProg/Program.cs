@@ -18,11 +18,14 @@ namespace SnakeProg
             int numInput = Methods.userInputChecker("Please Enter Number", "Number");
             Methods.wholeNumberChecker(numInput);
             //4
-           Checkbase check1 = new Checkbase();
+            Checkbase check1 = new Checkbase();
             check1.getCheckDetailsAndPrint();
             //5
-            Methods.tempChecker(monthNum,averageTemp);
-            
+            Methods.tempChecker(monthNum, averageTemp);
+            //6
+            Methods.RimToArabik("XLIV");
+
+
 
 
         }
