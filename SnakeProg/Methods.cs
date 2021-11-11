@@ -86,6 +86,28 @@ namespace SnakeProg
 
 
         }
+        //0 1 1 2 3 5 8 13 21
+        public static void FibonachiLine()
+        {
+            List<int> list = new List<int>();
+            list.Add(0);
+            list.Add(1);
+
+            Console.WriteLine(list[0]);
+
+            for (int i = 1; i <= 30; i++)
+            {
+               
+                list.Add(list[i-1] + list[i]);
+                Console.WriteLine(list[i]);
+            }
+
+            
+
+
+
+
+        }
 
 
 

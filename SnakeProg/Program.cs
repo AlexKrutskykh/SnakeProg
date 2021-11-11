@@ -16,6 +16,9 @@ namespace SnakeProg
 
             //3
             Methods.GetSesonTime();
+
+            //4
+            Methods.FibonachiLine();
         }
     }
 }
