@@ -19,6 +19,11 @@ namespace SnakeProg
 
             //4
             Methods.FibonachiLine();
+
+            //5
+
+            Methods.GetBiggerLine("aecalexaeckrutskykhafc", "cfaalexcfakrutskykhcea");
+
         }
     }
 }

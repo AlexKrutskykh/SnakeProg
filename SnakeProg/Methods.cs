@@ -97,18 +97,47 @@ namespace SnakeProg
 
             for (int i = 1; i <= 30; i++)
             {
-               
-                list.Add(list[i-1] + list[i]);
+
+                list.Add(list[i - 1] + list[i]);
                 Console.WriteLine(list[i]);
             }
-
-            
-
-
-
-
         }
 
+        // aecalexaeckrutskykhafc
+        // cfaalexcfakrutskykhcea
+        public static void GetBiggerLine(string sentenceOne, string sentenceTwo)
+        {
+            string result = "";
+            List<string> list = new List<string>();
+
+            for (int i = 0; i < sentenceOne.Length - 1; i++)
+            {
+                if (sentenceOne[i] == sentenceTwo[i])
+                {
+                    result += sentenceOne[i];
+
+                    if (sentenceOne[i + 1] != sentenceTwo[i + 1])
+                    {
+                        list.Add(result);
+                        result = "";
+                    }
+                }
+            }
+            for (int i = 0; i < list.Count - 1; i++)
+            {
+                if (list[i].Length > list[i + 1].Length)
+                {
+                    result = list[i];
+                }
+                else
+                {
+                    result = list[i + 1];
+                }
+
+            }
+            Console.WriteLine(result);
+
+        }
 
 
 
