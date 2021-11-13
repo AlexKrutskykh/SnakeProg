@@ -24,7 +24,7 @@ namespace SnakeProg
         public static void GetSumofStrinLine(string line)
         {
             string value = "";
-            int counter = 0;
+           // int counter = 0;
             List<int> sumList = new List<int>();
 
             for (int i = 0; i <= line.Length - 1; i++)
@@ -103,38 +103,47 @@ namespace SnakeProg
             }
         }
 
-        // aecalexaeckrutskykhafc
-        // cfaalexcfakrutskykhcea
         public static void GetBiggerLine(string sentenceOne, string sentenceTwo)
         {
             string result = "";
             List<string> list = new List<string>();
 
             for (int i = 0; i < sentenceOne.Length - 1; i++)
-            {
-                if (sentenceOne[i] == sentenceTwo[i])
+            {   
+                for (int j = 0; j < sentenceTwo.Length -1; j++)
                 {
-                    result += sentenceOne[i];
-
-                    if (sentenceOne[i + 1] != sentenceTwo[i + 1])
+                    if (sentenceOne[i] == sentenceTwo[j])
                     {
-                        list.Add(result);
-                        result = "";
+                        result += sentenceOne[i];
+
+                        if (sentenceOne[i] == sentenceTwo[j+ 1])
+                        {
+                            break;
+                        }
+                        if (sentenceOne[i+1] != sentenceTwo[j+1] || sentenceOne[i] == sentenceTwo[j + 1])
+                        {
+                            list.Add(result);
+                            result = "";
+                            break;
+                        }
+                        else if (sentenceOne[i + 1] == sentenceTwo[j + 1])
+                        {
+                            ++i;
+                        }
                     }
                 }
             }
-            for (int i = 0; i < list.Count - 1; i++)
+            for (int i = 0; i < list.Count-1; i++)
             {
-                if (list[i].Length > list[i + 1].Length)
+                if (list[i].Length >= list[i+1].Length )
                 {
                     result = list[i];
-                }
-                else
+                }else
                 {
                     result = list[i + 1];
                 }
-
             }
+
             Console.WriteLine(result);
 
         }

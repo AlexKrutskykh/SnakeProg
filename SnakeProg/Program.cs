@@ -22,7 +22,8 @@ namespace SnakeProg
 
             //5
 
-            Methods.GetBiggerLine("aecalexaeckrutskykhafc", "cfaalexcfakrutskykhcea");
+            Methods.GetBiggerLine("wrtALEXabcROMANIw", "dcsAALEXbwROMANIr");
+                                   
 
         }
     }
