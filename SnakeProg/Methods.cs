@@ -109,10 +109,6 @@ namespace SnakeProg
             public bool IsDone { get; set; }
 
 
-
-
-
-
         }
 
         public static string AddTaskToDoAndSaveTofile()
@@ -125,6 +121,7 @@ namespace SnakeProg
                 //Read if there is task in the list
                 var json = File.ReadAllText(filePath);
                 todoList = JsonConvert.DeserializeObject<List<TODO>>(json);
+                GetListOfTodo(filePath);
 
                 //ask for a new task to add
                 Console.WriteLine("Write task for list of TODO:");
@@ -148,23 +145,30 @@ namespace SnakeProg
         {
             var json = File.ReadAllText(jsonPath);
             var todoList = JsonConvert.DeserializeObject<List<TODO>>(json);
-            for (int i = 0; i <= todoList.Count - 1; i++)
+            if (todoList == null )
             {
-                if (todoList[i].IsDone == false)
+                Console.WriteLine($"List of TODO is empty, start field it");
+            }
+            else
+            {
+                for (int i = 0; i <= todoList.Count - 1; i++)
                 {
-                    Console.WriteLine($"{i + 1} - [ ] -  {todoList[i].Title}");
-                }
-                else
-                {
-                    Console.WriteLine($"{i + 1} - [X] -  {todoList[i].Title}");
+                    if (todoList[i].IsDone == false)
+                    {
+                        Console.WriteLine($"{i + 1} - [ ] -  {todoList[i].Title}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{i + 1} - [X] -  {todoList[i].Title}");
+                    }
                 }
             }
         }
 
 
-        public static void SetTaskToDone( string jsonPath)
+        public static void SetTaskToDone(string jsonPath)
         {
-             var condition = true;
+            var condition = true;
             var num = 0;
             while (condition)
             {
