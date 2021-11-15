@@ -1,0 +1,68 @@
+This is directory catalog from C:\
+C:\$Recycle.Bin
+C:\$WinREAgent
+C:\BIOS
+C:\Documents and Settings
+C:\Drivers
+C:\Games
+C:\Microsoft
+C:\OneDriveTemp
+C:\PerfLogs
+C:\Program Files
+C:\Program Files (x86)
+C:\ProgramData
+C:\Recovery
+C:\System Volume Information
+C:\Users
+C:\Windows
+This is directory catalog from C:\Users\
+C:\Users\Alex
+C:\Users\All Users
+C:\Users\Default
+C:\Users\Default User
+C:\Users\Public
+This is directory catalog from C:\Users\Alex\
+C:\Users\Alex\.android
+C:\Users\Alex\.dotnet
+C:\Users\Alex\.ssh
+C:\Users\Alex\3D Objects
+C:\Users\Alex\AppData
+C:\Users\Alex\Application Data
+C:\Users\Alex\Contacts
+C:\Users\Alex\Cookies
+C:\Users\Alex\Desktop
+C:\Users\Alex\Documents
+C:\Users\Alex\Downloads
+C:\Users\Alex\Favorites
+C:\Users\Alex\first-project
+C:\Users\Alex\Links
+C:\Users\Alex\Local Settings
+C:\Users\Alex\Music
+C:\Users\Alex\My Documents
+C:\Users\Alex\NetHood
+C:\Users\Alex\OneDrive
+C:\Users\Alex\Pictures
+C:\Users\Alex\PrintHood
+C:\Users\Alex\Recent
+C:\Users\Alex\Saved Games
+C:\Users\Alex\Searches
+C:\Users\Alex\SendTo
+C:\Users\Alex\Source
+C:\Users\Alex\Start Menu
+C:\Users\Alex\Templates
+C:\Users\Alex\UrbanVPN
+C:\Users\Alex\Videos
+This is directory catalog from C:\Users\Alex\Source\
+C:\Users\Alex\Source\Repos
+This is directory catalog from C:\Users\Alex\Source\Repos\
+C:\Users\Alex\Source\Repos\snake
+C:\Users\Alex\Source\Repos\SnakeProg
+This is directory catalog from C:\Users\Alex\Source\Repos\SnakeProg\
+C:\Users\Alex\Source\Repos\SnakeProg\.git
+C:\Users\Alex\Source\Repos\SnakeProg\.vs
+C:\Users\Alex\Source\Repos\SnakeProg\SnakeProg
+This is directory catalog from C:\Users\Alex\Source\Repos\SnakeProg\SnakeProg\
+C:\Users\Alex\Source\Repos\SnakeProg\SnakeProg\bin
+C:\Users\Alex\Source\Repos\SnakeProg\SnakeProg\files
+C:\Users\Alex\Source\Repos\SnakeProg\SnakeProg\obj
+C:\Users\Alex\Source\Repos\SnakeProg\SnakeProg\Properties
