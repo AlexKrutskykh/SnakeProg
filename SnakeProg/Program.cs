@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace SnakeProg
 {
@@ -6,9 +7,12 @@ namespace SnakeProg
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
-            Console.WriteLine("Test message after");
+            var userInput = Methods.GetExpression();
+
+            var num = Methods.GetNumbers(userInput);
+            var operators = Methods.GetOperators(userInput);
+            Methods.Calculate(num, operators);
+
         }
     }
 }
