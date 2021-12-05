@@ -12,18 +12,13 @@ namespace SnakeProg
     {
         public static void Config()
         {
+           
             var roaming = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoaming);
             ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
             fileMap.ExeConfigFilename = roaming.FilePath;
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
             KeyValueConfigurationCollection settings = configuration.AppSettings.Settings;
             configuration.Save(ConfigurationSaveMode.Modified);
-
-            if (roaming.HasFile.Equals(false))
-            {
-                
-
-            }
 
             
             

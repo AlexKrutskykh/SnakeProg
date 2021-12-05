@@ -6,7 +6,9 @@ namespace SnakeProg
     {
         static void Main(string[] args)
         {
-            Methods.Config();
+             Methods.Config();
+
+           
 
 
         }
