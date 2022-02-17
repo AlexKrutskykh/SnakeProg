@@ -30,7 +30,7 @@ namespace SnakeProg
                     task1.AddNodeAfter(task1.head, 77);
                     task1.PrintLinkedList();
                     Console.WriteLine($"Total elements in the list is:{task1.GetCount()}" );  
-                    task1.RemoveNode(1);
+                    task1.RemoveNode(3);
                     task1.PrintLinkedList();
                     break;
 

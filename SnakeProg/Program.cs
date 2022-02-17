@@ -7,23 +7,18 @@ namespace SnakeProg
     {
         static void Main(string[] args)
         {
-           List<Lesson> lessons = new List<Lesson>();
+            List<Lesson> lessons = new List<Lesson>();
             Lesson1 lesson1 = new Lesson1();
             Lesson2 lesson2 = new Lesson2();
-   
+
             lessons.Add(lesson1);
             lessons.Add(lesson2);
 
-            
-            
-
-
-
-
-
             MainMenu(lessons);
 
-            
+
+          
+
 
         }
 
@@ -66,7 +61,7 @@ namespace SnakeProg
                 Console.WriteLine($"Enter Task number");
                 Int32.TryParse(Console.ReadLine().ToString(), out taskNumber);
                 //check entered num is within the range list num
-                while ((taskNumber < 0 ) || taskNumber > list[lessonNumber].Tasks.Count)
+                while ((taskNumber < 0) || taskNumber > list[lessonNumber].Tasks.Count)
                 {
                     Console.WriteLine($"Enter correct number for Task");
                     Int32.TryParse(Console.ReadLine().ToString(), out taskNumber);
@@ -92,7 +87,7 @@ namespace SnakeProg
                         list[lessonNumber].TasksRun(taskNumber);
                         condition = GetContinueOrExit();
                         break;
-                   
+
 
 
 
@@ -112,6 +107,8 @@ namespace SnakeProg
             else { condition = false; }
             return condition;
         }
+
+
 
 
     }

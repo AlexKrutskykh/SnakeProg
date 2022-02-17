@@ -7,12 +7,12 @@ namespace SnakeProg
     {
         public List<Task> Tasks;
         public string LessonDescription { get; set; }
-       
+
 
         public Lesson()
         {
-          Tasks = new List<Task>();   
-            
+            Tasks = new List<Task>();
+
         }
 
         public virtual void TasksRun(int taskNumber) { }
